@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - Punto y Crochet</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+           <div class="logo">
+                <a href="index.html">
+                    <img src="logo.png" alt="Punto y Crochet">
+                    <span>Punto y Crochet</span>
+                </a>
+            </div>
+            
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="productos.html" class="active">Productos</a></li>
+                    <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="products-page">
+            <div class="container">
+                <!-- Filtros Avanzados -->
+                <div class="products-filters">
+                    <h2>Nuestra Colección</h2>
+                    
+                    <div class="filter-group">
+                        <div class="filter-section">
+                            <h4>Categorías</h4>
+                            <select class="filter-select" id="category-filter">
+                                <option value="all">Todos</option>
+                                <option value="animals">Animales</option>
+                                <option value="characters">Personajes</option>
+                                <option value="fantasy">Fantasía</option>
+                            </select>
+                        </div>
+                        
+                        <div class="filter-section">
+                            <h4>Precio</h4>
+                            <select class="filter-select" id="price-filter">
+                                <option value="all">Todos</option>
+                                <option value="0-20000">0€ - 20€ </option>
+                                <option value="20000-30000">20€ - 50€</option>
+                                <option value="30000+">Más de 50€</option>
+                            </select>
+                        </div>
+                        
+                        <div class="filter-section">
+                            <h4>Tamaño</h4>
+                            <div class="size-options">
+                                <label><input type="checkbox" name="size" value="small"> Pequeño</label>
+                                <label><input type="checkbox" name="size" value="medium"> Mediano</label>
+                                <label><input type="checkbox" name="size" value="large"> Grande</label>
+                            </div>
+                        </div>
+                        
+                        <div class="filter-section">
+                            <label class="custom-checkbox">
+                                <input type="checkbox" id="customizable-filter">
+                                <span class="checkmark"></span>
+                                Solo personalizables
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Listado de Productos (ahora con 6 productos) -->
+                <div class="products-grid">
+                    <!-- Producto 1 - Amigurumi Capibara -->
+                    <div class="product-card" data-category="animals" data-price="50" data-size="small" data-customizable="true">
+                        <div class="product-badge">Más vendido</div>
+                        <img src="cap.png" alt="Amigurumi cristiano ronaldo" class="product-main-image">
+                        <h3>Amigurumi Cristiano Ronaldo</h3>
+                        <div class="product-rating">
+                            <div class="stars" data-rating="5">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                <span>(8)</span>
+                            </div>
+                        </div>
+                        <p>✨ Capibara de crochet súper suave¡Ideal para regalar! Personalízalo con colores y detalles únicos. 💖🧶</p>
+                        <span class="price">20€</span>
+                        <div class="product-actions">
+                            <button class="btn quick-view-btn" data-product="2">Compra ahora</button>
+                            <button class="btn-wishlist"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <!-- Producto 2 - Amigurumi Cristiano Ronaldo -->
+                    <div class="product-card" data-category="animals" data-price="50" data-size="small" data-customizable="true">
+                        <div class="product-badge">Personalizable</div>
+                        <img src="ronal.png" alt="Amigurumi cristiano ronaldo" class="product-main-image">
+                        <h3>Amigurumi Cristiano Ronaldo</h3>
+                        <div class="product-rating">
+                            <div class="stars" data-rating="5">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                <span>(8)</span>
+                            </div>
+                        </div>
+                        <p>⚽✨ ¡Mini CR7 de crochet! La esencia de Cristiano en un amigurumi hecho a mano. Perfecto para fans. 🧶⚽✨      </p>
+                        <span class="price">50€</span>
+                        <div class="product-actions">
+                            <button class="btn quick-view-btn" data-product="2">Compra ahora</button>
+                            <button class="btn-wishlist"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                    
+                    <!-- Producto 3 - Amigurumi Messi -->
+                    <div class="product-card" data-category="animals" data-price="50" data-size="medium" data-customizable="false">
+                        <img src="messi.jpg" alt="Leo messi amigurumi" class="product-main-image">
+                        <h3>Amigurumi Lionel Messi</h3>
+                        <div class="product-rating">
+                            <div class="stars" data-rating="4">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                                <span>(15)</span>
+                            </div>
+                        </div>
+                        <p>✨ ¡Mini Messi de crochet! La magia de Lionel en un adorable amigurumi hecho a mano. Perfecto para fans del fútbol. 🧶⚽</p>
+                        <span class="price">50€</span>
+                        <div class="product-actions">
+                            <button class="btn quick-view-btn" data-product="3">Compra ahora</button>
+                            <button class="btn-wishlist"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                    
+                    <!-- Producto 4 - Amigurumi girafa -->
+                    <div class="product-card" data-category="fantasy" data-price="55" data-size="large" data-customizable="true">
+                        <div class="product-badge">Nuevo</div>
+                        <img src="jirafa.png" alt="Amigurumi girafa amarilla" class="product-main-image">
+                        <h3>Amigurumi Jirafa clásica</h3>
+                        <div class="product-rating">
+                            <div class="stars" data-rating="5">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                <span>(6)</span>
+                            </div>
+                        </div>
+                        <p>🦒✨ ¡Pequeña jirafa de crochet! Un amigurumi tierno y clásico, tejido a mano con amor. Perfecto para amantes de los animales. 🧶💛</p>
+                        <span class="price">20€</span>
+                        <div class="product-actions">
+                            <button class="btn quick-view-btn" data-product="4">Compra ahora</button>
+                            <button class="btn-wishlist"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                    
+                    <!-- Producto 5 - Amigurumi Neymar jr -->
+                    <div class="product-card" data-category="fantasy" data-price="50" data-size="medium" data-customizable="true">
+                        <div class="product-badge">Más Vendido</div>
+                        <img src="am_neymar.jpg" alt="Amigurumi neymar" class="product-main-image">
+                        <h3>Amigurumi Neymar jr</h3>
+                        <div class="product-rating">
+                            <div class="stars" data-rating="4">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                                <span>(23)</span>
+                            </div>
+                        </div>
+                        <p>Adorable amigurumi de tamaño pequeño de Neymar junior dos santos.</p>
+                        <span class="price">50€</span>
+                        <div class="product-actions">
+                            <button class="btn quick-view-btn" data-product="5">Compra ahora</button>
+                            <button class="btn-wishlist"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                    
+                    <!-- Producto 6 - Amigurumi Unicornio -->
+                    <div class="product-card" data-category="animals" data-price="55" data-size="large" data-customizable="false">
+                        <img src="am_unicornio.jpg" alt="Amigurumi Unicornio" class="product-main-image">
+                        <h3>Amigurumi unicornio</h3>
+                        <div class="product-rating">
+                            <div class="stars" data-rating="4">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                                <span>(9)</span>
+                            </div>
+                        </div>
+                        <p>Divertido amigurumi de unicornio colorido.</p>
+                        <span class="price">55€</span>
+                        <div class="product-actions">
+                            <button class="btn quick-view-btn" data-product="6">Compra ahora</button>
+                            <button class="btn-wishlist"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Productos Relacionados (se mantiene igual) -->
+                <div class="related-products">
+                    <h3>Productos que también te pueden interesar...</h3>
+                    <div class="related-grid">
+                        <!-- Producto Relacionado 1 -->
+                        <div class="related-product">
+                            <img src="pack_starwars.jpg" alt="Amigurumi starwars">
+                            <h4>Pack de Amigurumis de Starwars</h4>
+                            <span class="price">155€</span>
+                        </div>
+                        
+                        <!-- Producto Relacionado 2 -->
+                        <div class="related-product">
+                            <img src="pack.jpg" alt="Unicornio Arcoíris">
+                            <h4>Pack de 20 Amigurumis de animales</h4>
+                            <span class="price">255€</span>
+                        </div>
+                        
+                        <!-- Producto Relacionado 3 -->
+                        <div class="related-product">
+                            <img src="mini_pack.jpg" alt="Dinosaurio Verde">
+                            <h4>Mini pack de varios Amigurumis</h4>
+                            <span class="price">130€</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modal de Producto (se mantiene igual) -->
+    </main>
+
+    <script src="script.js"></script>
+
+
+
+    <footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <!-- Columna 1: Logo y descripción -->
+            <div class="footer-col footer-about">
+                <div class="footer-logo">
+                    <a href="index.html">
+                        <img src="logo.png" alt="Punto y Crochet">
+                        <span>Punto y Crochet</span>
+                    </a>
+                </div>
+                <p class="footer-description">✨ Amigurumis únicos, tejidos con amor desde 2025. ¡Muñecos llenos de magia para alegrar tu día! 🧶💖</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <!-- Columna 2: Enlaces rápidos -->
+            <div class="footer-col">
+                <h3 class="footer-title">Explorar</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                    <li><a href="formacion.html">Formación</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+
+            <!-- Columna 3: Información de contacto -->
+            <div class="footer-col">
+                <h3 class="footer-title">Contacto</h3>
+                <ul class="footer-contact">
+                    <li><i class="fas fa-map-marker-alt"></i> España, Fraga</li>
+                    <li><i class="fas fa-phone-alt"></i> +34 690 78 51 80</li>
+                    <li><i class="fas fa-envelope"></i> puntoycrochet@gmail.com</li>
+                    <li><i class="fas fa-clock"></i> L-V: 10:00 - 18:00</li>
+                </ul>
+            </div>
+
+            <!-- Columna 4: Newsletter -->
+            <div class="footer-col">
+                <h3 class="footer-title">Newsletter</h3>
+                <p class="footer-newsletter-text">Suscríbete para recibir patrones gratis y ofertas exclusivas.</p>
+                <form class="footer-newsletter">
+                    <input type="email" placeholder="Tu correo electrónico" required>
+                    <button type="submit" class="btn">Suscribirse</button>
+                </form>
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                    <i class="fab fa-cc-amex"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-copyright">
+                &copy; 2025 Punto y Crochet. Todos los derechos reservados.
+            </div>
+            <div class="footer-legal">
+                <a href="politica-privacidad.html">Política de Privacidad</a>
+                <a href="terminos-condiciones.html">Términos y Condiciones</a>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

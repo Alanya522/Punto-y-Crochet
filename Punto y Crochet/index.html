@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Punto y Crochet - Amigurumis Artesanales</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="logo.png" alt="Punto y Crochet">
+                    <span>Punto y Crochet</span>
+                </a>
+            </div>
+            
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html" class="active">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Amigurumis hechos con amor</h1>
+                <p>Descubre nuestra colección de muñecos tejidos a crochet, cada uno con su propia personalidad.</p>
+                <a href="productos.html" class="btn">Ver productos</a>
+            </div>
+        </section>
+
+        <!-- Sección de Destacados -->
+        <section class="featured">
+            <div class="container">
+                <h2 class="section-title">Nuestros Favoritos</h2>
+                <div class="featured-carousel">
+                    <!-- Producto 1 -->
+                    <div class="product-card">
+                        <div class="product-badge">Novedad</div>
+                        <img src="osito teddy.png" alt="Osito Teddy">
+                        <div class="product-info">
+                            <h3>Osito Teddy</h3>
+                            <p>Suave y esponjoso, perfecto para regalar</p>
+                            <div class="price-hidden">40€</div>
+                            <a href="#" class="btn-small">Compra ahora</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Producto 2 -->
+                    <div class="product-card">
+                        <div class="product-badge">Más Vendido</div>
+                        <img src="conejito.png" alt="Conejito">
+                        <div class="product-info">
+                            <h3>Conejito Saltarín</h3>
+                            <p>Con orejas extra suaves</p>
+                            <div class="price-hidden">50€</div>
+                            <a href="#" class="btn-small">Compra ahora</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Producto 3 -->
+                    <div class="product-card">
+                        <img src="elefante.png" alt="Elefantito">
+                        <div class="product-info">
+                            <h3>Elefantito Gris</h3>
+                            <p>Pequeño compañero para grandes aventuras</p>
+                            <div class="price-hidden">80€</div>
+                            <a href="#" class="btn-small">Compra ahora</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Banner Promocional -->
+        <section class="promo-banner">
+            <div class="container">
+                <div class="promo-content">
+                    <h3>¡Oferta Especial!</h3>
+                    <p>Solo por hoy: 20% de descuento en toda la tienda</p>
+                    <div class="countdown" id="countdown">24:00:00</div>
+                    <div class="discount-code">
+                        <span class="code">PUNTO20</span>
+                        <button class="btn-copy">Copiar</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Testimonios -->
+        <section class="testimonials">
+            <div class="container">
+                <h2 class="section-title">Lo que dicen nuestros clientes</h2>
+                <div class="testimonial-carousel">
+                    <!-- Testimonio 1 -->
+                    <div class="testimonial-card">
+                        <div class="rating">★★★★★</div>
+                        <blockquote>
+                            "El osito que compré para mi sobrina es adorable. La calidad del tejido es impresionante y llegó perfectamente empaquetado."
+                        </blockquote>
+                        <div class="client-info">
+                            <img src="https://i.imgur.com/ybYQJKl.jpg" alt="Cliente">
+                            <div>
+                                <h4>María Fernández</h4>
+                                <p>Santiago, Chile</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Testimonio 2 -->
+                    <div class="testimonial-card">
+                        <div class="rating">★★★★☆</div>
+                        <blockquote>
+                            "Encantada con mi compra. El proceso fue fácil y el producto superó mis expectativas. Definitivamente volveré a comprar."
+                        </blockquote>
+                        <div class="client-info">
+                            <img src="https://i.imgur.com/zxyQJKl.jpg" alt="Cliente">
+                            <div>
+                                <h4>Carlos Muñoz</h4>
+                                <p>Valparaíso, Chile</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Video Testimonial -->
+                <div class="video-testimonial">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ejemplo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- Galería Instagram -->
+        <section class="instagram-feed">
+            <div class="container">
+                <h2 class="section-title">Síguenos en Instagram <span>@puntoycrochet</span></h2>
+                <p>Comparte tus fotos con el hashtag <strong>#PuntoyCrochet</strong></p>
+                <div class="gallery-grid">
+                    <a href="https://i.imgur.com/XyZQJKl.jpg" class="gallery-item" data-lightbox="instagram-gallery">
+                        <img src="https://i.imgur.com/XyZQJKl.jpg" alt="Amigurumi">
+                    </a>
+                    <a href="https://i.imgur.com/AbCDeFg.jpg" class="gallery-item" data-lightbox="instagram-gallery">
+                        <img src="https://i.imgur.com/AbCDeFg.jpg" alt="Amigurumi">
+                    </a>
+                    <!-- Más imágenes... -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter -->
+        <section class="newsletter">
+            <div class="container">
+                <div class="newsletter-content">
+                    <h3>¡Recibe un patrón gratis!</h3>
+                    <p>Suscríbete a nuestro newsletter y obtén un patrón exclusivo para hacer tu propio amigurumi.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Tu correo electrónico" required>
+                        <button type="submit" class="btn">Suscribirse</button>
+                    </form>
+                    <small>Prometemos no enviar spam. Puedes darte de baja cuando quieras.</small>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Footer se mantiene igual -->
+    </footer>
+
+    <!-- Lightbox (hidden by default) -->
+    <div id="lightbox" class="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+
+    <script src="script.js"></script>
+
+
+
+    <footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <!-- Columna 1: Logo y descripción -->
+            <div class="footer-col footer-about">
+                <div class="footer-logo">
+                    <a href="index.html">
+                        <img src="logo.png" alt="Punto y Crochet">
+                        <span>Punto y Crochet</span>
+                    </a>
+                </div>
+                <p class="footer-description">Creando compañeros tejidos con amor desde 2018. Cada puntada lleva nuestro cariño y dedicación.</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <!-- Columna 2: Enlaces rápidos -->
+            <div class="footer-col">
+                <h3 class="footer-title">Explorar</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                    <li><a href="formacion.html">Formación</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+
+            <!-- Columna 3: Información de contacto -->
+            <div class="footer-col">
+                <h3 class="footer-title">Contacto</h3>
+                <ul class="footer-contact">
+                    <li><i class="fas fa-map-marker-alt"></i> Calle Artesanal 123, Santiago, Chile</li>
+                    <li><i class="fas fa-phone-alt"></i> +56 9 1234 5678</li>
+                    <li><i class="fas fa-envelope"></i> contacto@puntoycrochet.cl</li>
+                    <li><i class="fas fa-clock"></i> L-V: 10:00 - 18:00</li>
+                </ul>
+            </div>
+
+            <!-- Columna 4: Newsletter -->
+            <div class="footer-col">
+                <h3 class="footer-title">Newsletter</h3>
+                <p class="footer-newsletter-text">Suscríbete para recibir patrones gratis y ofertas exclusivas.</p>
+                <form class="footer-newsletter">
+                    <input type="email" placeholder="Tu correo electrónico" required>
+                    <button type="submit" class="btn">Suscribirse</button>
+                </form>
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                    <i class="fab fa-cc-amex"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-copyright">
+                &copy; 2023 Punto y Crochet. Todos los derechos reservados.
+            </div>
+            <div class="footer-legal">
+                <a href="politica-privacidad.html">Política de Privacidad</a>
+                <a href="terminos-condiciones.html">Términos y Condiciones</a>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
